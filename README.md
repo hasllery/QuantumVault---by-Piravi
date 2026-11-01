@@ -1,4 +1,4 @@
-# piravi
+# PIRAVI
 # QuantumVault
 
 Milestones 1–4: file encryption using ML-KEM-768 or an X25519 baseline,

@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "measured_at_utc": "2026-11-01T06:26:46.318515+00:00",
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel",
+    "versions": {
+      "cryptography": "50.0.2",
+      "pqcrypto": "0.3.4"
+    },
+    "repetitions": 30,
+    "warmup_calls_per_operation": 1,
+    "statistic": "median",
+    "clock": "perf_counter_ns",
+    "scope": "key establishment only; excludes HKDF, AES-GCM and file I/O",
+    "sender_scope": "fresh sender material and shared secret; X25519 includes ephemeral key generation",
+    "receiver_scope": "recover shared secret from byte-encoded keys and sender material"
+  },
+  "algorithms": {
+    "ML-KEM-768": {
+      "sizes_bytes": {
+        "public_key": 1184,
+        "private_key": 2400,
+        "transmitted_key_material": 1088,
+        "shared_secret": 32
+      },
+      "median_ms": {
+        "key_generation": 0.5668,
+        "sender_establishment": 0.9394,
+        "receiver_recovery": 0.1772
+      }
+    },
+    "X25519": {
+      "sizes_bytes": {
+        "public_key": 32,
+        "private_key": 32,
+        "transmitted_key_material": 32,
+        "shared_secret": 32
+      },
+      "median_ms": {
+        "key_generation": 0.1192,
+        "sender_establishment": 0.21325,
+        "receiver_recovery": 0.19455
+      }
+    }
+  }
+}

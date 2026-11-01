@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "measured_at_utc": "2026-11-01T09:39:12.132497+00:00",
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "versions": {
+      "cryptography": "50.0.2",
+      "pqcrypto": "0.3.4"
+    },
+    "repetitions": 5,
+    "warmup_calls_per_operation": 1,
+    "statistic": "median",
+    "fixture": "same synthetic repeated bytes 0 to 255 for both algorithms",
+    "scope": "in-memory key establishment, HKDF, AES-GCM and package creation/recovery; excludes recipient key generation and disk I/O"
+  },
+  "measurements": [
+    {
+      "algorithm": "ML-KEM-768",
+      "plaintext_bytes": 0,
+      "package_bytes": 1145,
+      "overhead_bytes": 1145,
+      "encrypt_median_ms": 0.9863,
+      "decrypt_median_ms": 0.3585
+    },
+    {
+      "algorithm": "ML-KEM-768",
+      "plaintext_bytes": 1024,
+      "package_bytes": 2169,
+      "overhead_bytes": 1145,
+      "encrypt_median_ms": 1.0664,
+      "decrypt_median_ms": 0.4292
+    },
+    {
+      "algorithm": "ML-KEM-768",
+      "plaintext_bytes": 1048576,
+      "package_bytes": 1049721,
+      "overhead_bytes": 1145,
+      "encrypt_median_ms": 4.3486,
+      "decrypt_median_ms": 2.5845
+    },
+    {
+      "algorithm": "X25519",
+      "plaintext_bytes": 0,
+      "package_bytes": 96,
+      "overhead_bytes": 96,
+      "encrypt_median_ms": 0.2751,
+      "decrypt_median_ms": 0.4363
+    },
+    {
+      "algorithm": "X25519",
+      "plaintext_bytes": 1024,
+      "package_bytes": 1120,
+      "overhead_bytes": 96,
+      "encrypt_median_ms": 0.4956,
+      "decrypt_median_ms": 0.3575
+    },
+    {
+      "algorithm": "X25519",
+      "plaintext_bytes": 1048576,
+      "package_bytes": 1048672,
+      "overhead_bytes": 96,
+      "encrypt_median_ms": 2.8705,
+      "decrypt_median_ms": 2.8657
+    }
+  ]
+}

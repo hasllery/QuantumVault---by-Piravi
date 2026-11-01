@@ -1,0 +1,2072 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "started_at_utc": "2026-11-01T09:21:18.534572+00:00",
+    "finished_at_utc": "2026-11-01T09:21:30.984404+00:00",
+    "profile": "small",
+    "modulus": 15,
+    "base": 2,
+    "counting_qubits": 4,
+    "work_qubits": 4,
+    "grid": {
+      "shots": [
+        1,
+        32
+      ],
+      "seeds": [
+        41,
+        42
+      ],
+      "noise_rates": [
+        0.0,
+        0.01
+      ]
+    },
+    "planned_trials": 16,
+    "basis_gates": [
+      "rz",
+      "sx",
+      "x",
+      "cx"
+    ],
+    "optimization_level": 1,
+    "seed_transpiler": 17,
+    "max_parallel_threads": 1,
+    "noise": "Synthetic depolarizing after rz/sx/x at p and cx at 5p; not device calibrated; no readout noise",
+    "criteria": "Period equals 4, verified factors equal 3 and 5, synthetic RSA recovery equals 7; no known-answer fallback",
+    "reference": "Order 4 and factors 3,5 are classical evaluation ground truth, never circuit inputs or recovery fallbacks",
+    "denominator": "All planned independent-seed trials per setting, including failures; shots are not trials",
+    "interval": "95 percent Wilson binomial interval per setting; small sample, no multiple-comparison adjustment",
+    "versions": {
+      "qiskit": "2.6.1",
+      "qiskit-aer": "0.18.2",
+      "numpy": "2.4.6"
+    },
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26300-SP0"
+  },
+  "trials": [
+    {
+      "implementation": "matrix",
+      "shots": 1,
+      "seed": 41,
+      "noise_rate": 0.0,
+      "status": "completed",
+      "period_recovered": false,
+      "factors_recovered": false,
+      "toy_recovered": false,
+      "counts": {
+        "0000": 1
+      },
+      "analysis": {
+        "status": "inconclusive",
+        "estimated_period": null,
+        "factors": [],
+        "verified_period_shots": 0,
+        "total_shots": 1,
+        "outcomes": [
+          {
+            "bitstring": "0000",
+            "count": 1,
+            "measured_integer": 0,
+            "phase": "0",
+            "rational_approximation": "0",
+            "candidate_period": null,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Zero phase carries no period information"
+          }
+        ],
+        "message": "No nontrivial factor pair recovered; rerun with more shots or another coprime base"
+      },
+      "usable_factor_shots": 0,
+      "width": 8,
+      "depth": 1936,
+      "operations": {
+        "rz": 1808,
+        "sx": 1061,
+        "cx": 489,
+        "measure": 4
+      },
+      "noise_coverage": {
+        "attached_instructions": [],
+        "affected_operations": {},
+        "affected_gate_count": 0,
+        "verified": true
+      },
+      "method": "statevector",
+      "construction_ms": 569.8735000041779,
+      "compilation_ms": 138.51159997284412,
+      "simulation_ms": 314.57759998738766,
+      "analysis_ms": 0.11470000026747584
+    },
+    {
+      "implementation": "matrix",
+      "shots": 1,
+      "seed": 42,
+      "noise_rate": 0.0,
+      "status": "completed",
+      "period_recovered": false,
+      "factors_recovered": false,
+      "toy_recovered": false,
+      "counts": {
+        "0000": 1
+      },
+      "analysis": {
+        "status": "inconclusive",
+        "estimated_period": null,
+        "factors": [],
+        "verified_period_shots": 0,
+        "total_shots": 1,
+        "outcomes": [
+          {
+            "bitstring": "0000",
+            "count": 1,
+            "measured_integer": 0,
+            "phase": "0",
+            "rational_approximation": "0",
+            "candidate_period": null,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Zero phase carries no period information"
+          }
+        ],
+        "message": "No nontrivial factor pair recovered; rerun with more shots or another coprime base"
+      },
+      "usable_factor_shots": 0,
+      "width": 8,
+      "depth": 1936,
+      "operations": {
+        "rz": 1808,
+        "sx": 1061,
+        "cx": 489,
+        "measure": 4
+      },
+      "noise_coverage": {
+        "attached_instructions": [],
+        "affected_operations": {},
+        "affected_gate_count": 0,
+        "verified": true
+      },
+      "method": "statevector",
+      "construction_ms": 498.6471000011079,
+      "compilation_ms": 34.322299994528294,
+      "simulation_ms": 236.78279999876395,
+      "analysis_ms": 0.09839999256655574
+    },
+    {
+      "implementation": "matrix",
+      "shots": 32,
+      "seed": 41,
+      "noise_rate": 0.0,
+      "status": "completed",
+      "period_recovered": true,
+      "factors_recovered": true,
+      "toy_recovered": true,
+      "counts": {
+        "1100": 13,
+        "0000": 11,
+        "1000": 5,
+        "0100": 3
+      },
+      "analysis": {
+        "status": "success",
+        "estimated_period": 4,
+        "factors": [
+          3,
+          5
+        ],
+        "verified_period_shots": 16,
+        "total_shots": 32,
+        "outcomes": [
+          {
+            "bitstring": "0000",
+            "count": 11,
+            "measured_integer": 0,
+            "phase": "0",
+            "rational_approximation": "0",
+            "candidate_period": null,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Zero phase carries no period information"
+          },
+          {
+            "bitstring": "0100",
+            "count": 3,
+            "measured_integer": 4,
+            "phase": "1/4",
+            "rational_approximation": "1/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          },
+          {
+            "bitstring": "1000",
+            "count": 5,
+            "measured_integer": 8,
+            "phase": "1/2",
+            "rational_approximation": "1/2",
+            "candidate_period": 2,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1100",
+            "count": 13,
+            "measured_integer": 12,
+            "phase": "3/4",
+            "rational_approximation": "3/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          }
+        ],
+        "message": "Nontrivial factors recovered from measured phases"
+      },
+      "usable_factor_shots": 16,
+      "width": 8,
+      "depth": 1936,
+      "operations": {
+        "rz": 1808,
+        "sx": 1061,
+        "cx": 489,
+        "measure": 4
+      },
+      "noise_coverage": {
+        "attached_instructions": [],
+        "affected_operations": {},
+        "affected_gate_count": 0,
+        "verified": true
+      },
+      "method": "statevector",
+      "construction_ms": 445.3651999938302,
+      "compilation_ms": 27.20069998758845,
+      "simulation_ms": 204.76359999156557,
+      "analysis_ms": 0.288800016278401
+    },
+    {
+      "implementation": "matrix",
+      "shots": 32,
+      "seed": 42,
+      "noise_rate": 0.0,
+      "status": "completed",
+      "period_recovered": true,
+      "factors_recovered": true,
+      "toy_recovered": true,
+      "counts": {
+        "1000": 6,
+        "0000": 8,
+        "1100": 8,
+        "0100": 10
+      },
+      "analysis": {
+        "status": "success",
+        "estimated_period": 4,
+        "factors": [
+          3,
+          5
+        ],
+        "verified_period_shots": 18,
+        "total_shots": 32,
+        "outcomes": [
+          {
+            "bitstring": "0000",
+            "count": 8,
+            "measured_integer": 0,
+            "phase": "0",
+            "rational_approximation": "0",
+            "candidate_period": null,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Zero phase carries no period information"
+          },
+          {
+            "bitstring": "0100",
+            "count": 10,
+            "measured_integer": 4,
+            "phase": "1/4",
+            "rational_approximation": "1/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          },
+          {
+            "bitstring": "1000",
+            "count": 6,
+            "measured_integer": 8,
+            "phase": "1/2",
+            "rational_approximation": "1/2",
+            "candidate_period": 2,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1100",
+            "count": 8,
+            "measured_integer": 12,
+            "phase": "3/4",
+            "rational_approximation": "3/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          }
+        ],
+        "message": "Nontrivial factors recovered from measured phases"
+      },
+      "usable_factor_shots": 18,
+      "width": 8,
+      "depth": 1936,
+      "operations": {
+        "rz": 1808,
+        "sx": 1061,
+        "cx": 489,
+        "measure": 4
+      },
+      "noise_coverage": {
+        "attached_instructions": [],
+        "affected_operations": {},
+        "affected_gate_count": 0,
+        "verified": true
+      },
+      "method": "statevector",
+      "construction_ms": 452.9587000142783,
+      "compilation_ms": 46.451999980490655,
+      "simulation_ms": 363.2750000106171,
+      "analysis_ms": 0.23129998589865863
+    },
+    {
+      "implementation": "matrix",
+      "shots": 1,
+      "seed": 41,
+      "noise_rate": 0.01,
+      "status": "completed",
+      "period_recovered": true,
+      "factors_recovered": true,
+      "toy_recovered": true,
+      "counts": {
+        "1100": 1
+      },
+      "analysis": {
+        "status": "success",
+        "estimated_period": 4,
+        "factors": [
+          3,
+          5
+        ],
+        "verified_period_shots": 1,
+        "total_shots": 1,
+        "outcomes": [
+          {
+            "bitstring": "1100",
+            "count": 1,
+            "measured_integer": 12,
+            "phase": "3/4",
+            "rational_approximation": "3/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          }
+        ],
+        "message": "Nontrivial factors recovered from measured phases"
+      },
+      "usable_factor_shots": 1,
+      "width": 8,
+      "depth": 1936,
+      "operations": {
+        "rz": 1808,
+        "sx": 1061,
+        "cx": 489,
+        "measure": 4
+      },
+      "noise_coverage": {
+        "attached_instructions": [
+          "cx",
+          "rz",
+          "sx",
+          "x"
+        ],
+        "affected_operations": {
+          "rz": 1808,
+          "sx": 1061,
+          "cx": 489
+        },
+        "affected_gate_count": 3358,
+        "verified": true
+      },
+      "method": "density_matrix",
+      "construction_ms": 397.95429998775944,
+      "compilation_ms": 24.63040000293404,
+      "simulation_ms": 1033.6367000127211,
+      "analysis_ms": 0.1260999997612089
+    },
+    {
+      "implementation": "matrix",
+      "shots": 1,
+      "seed": 42,
+      "noise_rate": 0.01,
+      "status": "completed",
+      "period_recovered": false,
+      "factors_recovered": false,
+      "toy_recovered": false,
+      "counts": {
+        "0000": 1
+      },
+      "analysis": {
+        "status": "inconclusive",
+        "estimated_period": null,
+        "factors": [],
+        "verified_period_shots": 0,
+        "total_shots": 1,
+        "outcomes": [
+          {
+            "bitstring": "0000",
+            "count": 1,
+            "measured_integer": 0,
+            "phase": "0",
+            "rational_approximation": "0",
+            "candidate_period": null,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Zero phase carries no period information"
+          }
+        ],
+        "message": "No nontrivial factor pair recovered; rerun with more shots or another coprime base"
+      },
+      "usable_factor_shots": 0,
+      "width": 8,
+      "depth": 1936,
+      "operations": {
+        "rz": 1808,
+        "sx": 1061,
+        "cx": 489,
+        "measure": 4
+      },
+      "noise_coverage": {
+        "attached_instructions": [
+          "cx",
+          "rz",
+          "sx",
+          "x"
+        ],
+        "affected_operations": {
+          "rz": 1808,
+          "sx": 1061,
+          "cx": 489
+        },
+        "affected_gate_count": 3358,
+        "verified": true
+      },
+      "method": "density_matrix",
+      "construction_ms": 490.51370000233874,
+      "compilation_ms": 38.21929998230189,
+      "simulation_ms": 1062.838300014846,
+      "analysis_ms": 0.07410001126118004
+    },
+    {
+      "implementation": "matrix",
+      "shots": 32,
+      "seed": 41,
+      "noise_rate": 0.01,
+      "status": "completed",
+      "period_recovered": true,
+      "factors_recovered": true,
+      "toy_recovered": true,
+      "counts": {
+        "1101": 1,
+        "0100": 7,
+        "1110": 1,
+        "0000": 3,
+        "1000": 6,
+        "1111": 1,
+        "0010": 1,
+        "1010": 3,
+        "1100": 7,
+        "0111": 1,
+        "0001": 1
+      },
+      "analysis": {
+        "status": "success",
+        "estimated_period": 4,
+        "factors": [
+          3,
+          5
+        ],
+        "verified_period_shots": 14,
+        "total_shots": 32,
+        "outcomes": [
+          {
+            "bitstring": "0000",
+            "count": 3,
+            "measured_integer": 0,
+            "phase": "0",
+            "rational_approximation": "0",
+            "candidate_period": null,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Zero phase carries no period information"
+          },
+          {
+            "bitstring": "0001",
+            "count": 1,
+            "measured_integer": 1,
+            "phase": "1/16",
+            "rational_approximation": "1/14",
+            "candidate_period": 14,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "0010",
+            "count": 1,
+            "measured_integer": 2,
+            "phase": "1/8",
+            "rational_approximation": "1/8",
+            "candidate_period": 8,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "0100",
+            "count": 7,
+            "measured_integer": 4,
+            "phase": "1/4",
+            "rational_approximation": "1/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          },
+          {
+            "bitstring": "0111",
+            "count": 1,
+            "measured_integer": 7,
+            "phase": "7/16",
+            "rational_approximation": "4/9",
+            "candidate_period": 9,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1000",
+            "count": 6,
+            "measured_integer": 8,
+            "phase": "1/2",
+            "rational_approximation": "1/2",
+            "candidate_period": 2,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1010",
+            "count": 3,
+            "measured_integer": 10,
+            "phase": "5/8",
+            "rational_approximation": "5/8",
+            "candidate_period": 8,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1100",
+            "count": 7,
+            "measured_integer": 12,
+            "phase": "3/4",
+            "rational_approximation": "3/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          },
+          {
+            "bitstring": "1101",
+            "count": 1,
+            "measured_integer": 13,
+            "phase": "13/16",
+            "rational_approximation": "9/11",
+            "candidate_period": 11,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1110",
+            "count": 1,
+            "measured_integer": 14,
+            "phase": "7/8",
+            "rational_approximation": "7/8",
+            "candidate_period": 8,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1111",
+            "count": 1,
+            "measured_integer": 15,
+            "phase": "15/16",
+            "rational_approximation": "13/14",
+            "candidate_period": 14,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          }
+        ],
+        "message": "Nontrivial factors recovered from measured phases"
+      },
+      "usable_factor_shots": 14,
+      "width": 8,
+      "depth": 1936,
+      "operations": {
+        "rz": 1808,
+        "sx": 1061,
+        "cx": 489,
+        "measure": 4
+      },
+      "noise_coverage": {
+        "attached_instructions": [
+          "cx",
+          "rz",
+          "sx",
+          "x"
+        ],
+        "affected_operations": {
+          "rz": 1808,
+          "sx": 1061,
+          "cx": 489
+        },
+        "affected_gate_count": 3358,
+        "verified": true
+      },
+      "method": "density_matrix",
+      "construction_ms": 472.1858999982942,
+      "compilation_ms": 28.9727000053972,
+      "simulation_ms": 953.446300001815,
+      "analysis_ms": 0.3449999785516411
+    },
+    {
+      "implementation": "matrix",
+      "shots": 32,
+      "seed": 42,
+      "noise_rate": 0.01,
+      "status": "completed",
+      "period_recovered": true,
+      "factors_recovered": true,
+      "toy_recovered": true,
+      "counts": {
+        "1000": 3,
+        "0000": 12,
+        "0100": 6,
+        "1101": 1,
+        "1110": 4,
+        "0110": 2,
+        "1100": 1,
+        "0011": 1,
+        "1010": 1,
+        "0001": 1
+      },
+      "analysis": {
+        "status": "success",
+        "estimated_period": 4,
+        "factors": [
+          3,
+          5
+        ],
+        "verified_period_shots": 7,
+        "total_shots": 32,
+        "outcomes": [
+          {
+            "bitstring": "0000",
+            "count": 12,
+            "measured_integer": 0,
+            "phase": "0",
+            "rational_approximation": "0",
+            "candidate_period": null,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Zero phase carries no period information"
+          },
+          {
+            "bitstring": "0001",
+            "count": 1,
+            "measured_integer": 1,
+            "phase": "1/16",
+            "rational_approximation": "1/14",
+            "candidate_period": 14,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "0011",
+            "count": 1,
+            "measured_integer": 3,
+            "phase": "3/16",
+            "rational_approximation": "2/11",
+            "candidate_period": 11,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "0100",
+            "count": 6,
+            "measured_integer": 4,
+            "phase": "1/4",
+            "rational_approximation": "1/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          },
+          {
+            "bitstring": "0110",
+            "count": 2,
+            "measured_integer": 6,
+            "phase": "3/8",
+            "rational_approximation": "3/8",
+            "candidate_period": 8,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1000",
+            "count": 3,
+            "measured_integer": 8,
+            "phase": "1/2",
+            "rational_approximation": "1/2",
+            "candidate_period": 2,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1010",
+            "count": 1,
+            "measured_integer": 10,
+            "phase": "5/8",
+            "rational_approximation": "5/8",
+            "candidate_period": 8,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1100",
+            "count": 1,
+            "measured_integer": 12,
+            "phase": "3/4",
+            "rational_approximation": "3/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          },
+          {
+            "bitstring": "1101",
+            "count": 1,
+            "measured_integer": 13,
+            "phase": "13/16",
+            "rational_approximation": "9/11",
+            "candidate_period": 11,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1110",
+            "count": 4,
+            "measured_integer": 14,
+            "phase": "7/8",
+            "rational_approximation": "7/8",
+            "candidate_period": 8,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          }
+        ],
+        "message": "Nontrivial factors recovered from measured phases"
+      },
+      "usable_factor_shots": 7,
+      "width": 8,
+      "depth": 1936,
+      "operations": {
+        "rz": 1808,
+        "sx": 1061,
+        "cx": 489,
+        "measure": 4
+      },
+      "noise_coverage": {
+        "attached_instructions": [
+          "cx",
+          "rz",
+          "sx",
+          "x"
+        ],
+        "affected_operations": {
+          "rz": 1808,
+          "sx": 1061,
+          "cx": 489
+        },
+        "affected_gate_count": 3358,
+        "verified": true
+      },
+      "method": "density_matrix",
+      "construction_ms": 436.90340002649464,
+      "compilation_ms": 27.846399985719472,
+      "simulation_ms": 1015.8181000151671,
+      "analysis_ms": 0.5044999998062849
+    },
+    {
+      "implementation": "rotation",
+      "shots": 1,
+      "seed": 41,
+      "noise_rate": 0.0,
+      "status": "completed",
+      "period_recovered": false,
+      "factors_recovered": false,
+      "toy_recovered": false,
+      "counts": {
+        "1000": 1
+      },
+      "analysis": {
+        "status": "inconclusive",
+        "estimated_period": null,
+        "factors": [],
+        "verified_period_shots": 0,
+        "total_shots": 1,
+        "outcomes": [
+          {
+            "bitstring": "1000",
+            "count": 1,
+            "measured_integer": 8,
+            "phase": "1/2",
+            "rational_approximation": "1/2",
+            "candidate_period": 2,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          }
+        ],
+        "message": "No nontrivial factor pair recovered; rerun with more shots or another coprime base"
+      },
+      "usable_factor_shots": 0,
+      "width": 8,
+      "depth": 330,
+      "operations": {
+        "rz": 292,
+        "cx": 180,
+        "sx": 58,
+        "measure": 4,
+        "x": 1
+      },
+      "noise_coverage": {
+        "attached_instructions": [],
+        "affected_operations": {},
+        "affected_gate_count": 0,
+        "verified": true
+      },
+      "method": "statevector",
+      "construction_ms": 14.63540000258945,
+      "compilation_ms": 19.241200003307313,
+      "simulation_ms": 42.70399999222718,
+      "analysis_ms": 0.07419998291879892
+    },
+    {
+      "implementation": "rotation",
+      "shots": 1,
+      "seed": 42,
+      "noise_rate": 0.0,
+      "status": "completed",
+      "period_recovered": false,
+      "factors_recovered": false,
+      "toy_recovered": false,
+      "counts": {
+        "0000": 1
+      },
+      "analysis": {
+        "status": "inconclusive",
+        "estimated_period": null,
+        "factors": [],
+        "verified_period_shots": 0,
+        "total_shots": 1,
+        "outcomes": [
+          {
+            "bitstring": "0000",
+            "count": 1,
+            "measured_integer": 0,
+            "phase": "0",
+            "rational_approximation": "0",
+            "candidate_period": null,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Zero phase carries no period information"
+          }
+        ],
+        "message": "No nontrivial factor pair recovered; rerun with more shots or another coprime base"
+      },
+      "usable_factor_shots": 0,
+      "width": 8,
+      "depth": 330,
+      "operations": {
+        "rz": 292,
+        "cx": 180,
+        "sx": 58,
+        "measure": 4,
+        "x": 1
+      },
+      "noise_coverage": {
+        "attached_instructions": [],
+        "affected_operations": {},
+        "affected_gate_count": 0,
+        "verified": true
+      },
+      "method": "statevector",
+      "construction_ms": 9.039500000653788,
+      "compilation_ms": 18.551799992565066,
+      "simulation_ms": 43.337500013876706,
+      "analysis_ms": 0.05740000051446259
+    },
+    {
+      "implementation": "rotation",
+      "shots": 32,
+      "seed": 41,
+      "noise_rate": 0.0,
+      "status": "completed",
+      "period_recovered": true,
+      "factors_recovered": true,
+      "toy_recovered": true,
+      "counts": {
+        "0000": 9,
+        "1000": 11,
+        "1100": 8,
+        "0100": 4
+      },
+      "analysis": {
+        "status": "success",
+        "estimated_period": 4,
+        "factors": [
+          3,
+          5
+        ],
+        "verified_period_shots": 12,
+        "total_shots": 32,
+        "outcomes": [
+          {
+            "bitstring": "0000",
+            "count": 9,
+            "measured_integer": 0,
+            "phase": "0",
+            "rational_approximation": "0",
+            "candidate_period": null,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Zero phase carries no period information"
+          },
+          {
+            "bitstring": "0100",
+            "count": 4,
+            "measured_integer": 4,
+            "phase": "1/4",
+            "rational_approximation": "1/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          },
+          {
+            "bitstring": "1000",
+            "count": 11,
+            "measured_integer": 8,
+            "phase": "1/2",
+            "rational_approximation": "1/2",
+            "candidate_period": 2,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1100",
+            "count": 8,
+            "measured_integer": 12,
+            "phase": "3/4",
+            "rational_approximation": "3/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          }
+        ],
+        "message": "Nontrivial factors recovered from measured phases"
+      },
+      "usable_factor_shots": 12,
+      "width": 8,
+      "depth": 330,
+      "operations": {
+        "rz": 292,
+        "cx": 180,
+        "sx": 58,
+        "measure": 4,
+        "x": 1
+      },
+      "noise_coverage": {
+        "attached_instructions": [],
+        "affected_operations": {},
+        "affected_gate_count": 0,
+        "verified": true
+      },
+      "method": "statevector",
+      "construction_ms": 9.713599982205778,
+      "compilation_ms": 15.336399985244498,
+      "simulation_ms": 50.157499994384125,
+      "analysis_ms": 0.20450001466087997
+    },
+    {
+      "implementation": "rotation",
+      "shots": 32,
+      "seed": 42,
+      "noise_rate": 0.0,
+      "status": "completed",
+      "period_recovered": true,
+      "factors_recovered": true,
+      "toy_recovered": true,
+      "counts": {
+        "0000": 10,
+        "1000": 4,
+        "1100": 8,
+        "0100": 10
+      },
+      "analysis": {
+        "status": "success",
+        "estimated_period": 4,
+        "factors": [
+          3,
+          5
+        ],
+        "verified_period_shots": 18,
+        "total_shots": 32,
+        "outcomes": [
+          {
+            "bitstring": "0000",
+            "count": 10,
+            "measured_integer": 0,
+            "phase": "0",
+            "rational_approximation": "0",
+            "candidate_period": null,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Zero phase carries no period information"
+          },
+          {
+            "bitstring": "0100",
+            "count": 10,
+            "measured_integer": 4,
+            "phase": "1/4",
+            "rational_approximation": "1/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          },
+          {
+            "bitstring": "1000",
+            "count": 4,
+            "measured_integer": 8,
+            "phase": "1/2",
+            "rational_approximation": "1/2",
+            "candidate_period": 2,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1100",
+            "count": 8,
+            "measured_integer": 12,
+            "phase": "3/4",
+            "rational_approximation": "3/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          }
+        ],
+        "message": "Nontrivial factors recovered from measured phases"
+      },
+      "usable_factor_shots": 18,
+      "width": 8,
+      "depth": 330,
+      "operations": {
+        "rz": 292,
+        "cx": 180,
+        "sx": 58,
+        "measure": 4,
+        "x": 1
+      },
+      "noise_coverage": {
+        "attached_instructions": [],
+        "affected_operations": {},
+        "affected_gate_count": 0,
+        "verified": true
+      },
+      "method": "statevector",
+      "construction_ms": 10.196999995969236,
+      "compilation_ms": 19.78410000447184,
+      "simulation_ms": 43.333299981895834,
+      "analysis_ms": 0.2182000025641173
+    },
+    {
+      "implementation": "rotation",
+      "shots": 1,
+      "seed": 41,
+      "noise_rate": 0.01,
+      "status": "completed",
+      "period_recovered": true,
+      "factors_recovered": true,
+      "toy_recovered": true,
+      "counts": {
+        "1100": 1
+      },
+      "analysis": {
+        "status": "success",
+        "estimated_period": 4,
+        "factors": [
+          3,
+          5
+        ],
+        "verified_period_shots": 1,
+        "total_shots": 1,
+        "outcomes": [
+          {
+            "bitstring": "1100",
+            "count": 1,
+            "measured_integer": 12,
+            "phase": "3/4",
+            "rational_approximation": "3/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          }
+        ],
+        "message": "Nontrivial factors recovered from measured phases"
+      },
+      "usable_factor_shots": 1,
+      "width": 8,
+      "depth": 330,
+      "operations": {
+        "rz": 292,
+        "cx": 180,
+        "sx": 58,
+        "measure": 4,
+        "x": 1
+      },
+      "noise_coverage": {
+        "attached_instructions": [
+          "cx",
+          "rz",
+          "sx",
+          "x"
+        ],
+        "affected_operations": {
+          "rz": 292,
+          "cx": 180,
+          "sx": 58,
+          "x": 1
+        },
+        "affected_gate_count": 531,
+        "verified": true
+      },
+      "method": "density_matrix",
+      "construction_ms": 13.016199984122068,
+      "compilation_ms": 18.235900002764538,
+      "simulation_ms": 590.7564999943133,
+      "analysis_ms": 0.0926000066101551
+    },
+    {
+      "implementation": "rotation",
+      "shots": 1,
+      "seed": 42,
+      "noise_rate": 0.01,
+      "status": "completed",
+      "period_recovered": false,
+      "factors_recovered": false,
+      "toy_recovered": false,
+      "counts": {
+        "0000": 1
+      },
+      "analysis": {
+        "status": "inconclusive",
+        "estimated_period": null,
+        "factors": [],
+        "verified_period_shots": 0,
+        "total_shots": 1,
+        "outcomes": [
+          {
+            "bitstring": "0000",
+            "count": 1,
+            "measured_integer": 0,
+            "phase": "0",
+            "rational_approximation": "0",
+            "candidate_period": null,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Zero phase carries no period information"
+          }
+        ],
+        "message": "No nontrivial factor pair recovered; rerun with more shots or another coprime base"
+      },
+      "usable_factor_shots": 0,
+      "width": 8,
+      "depth": 330,
+      "operations": {
+        "rz": 292,
+        "cx": 180,
+        "sx": 58,
+        "measure": 4,
+        "x": 1
+      },
+      "noise_coverage": {
+        "attached_instructions": [
+          "cx",
+          "rz",
+          "sx",
+          "x"
+        ],
+        "affected_operations": {
+          "rz": 292,
+          "cx": 180,
+          "sx": 58,
+          "x": 1
+        },
+        "affected_gate_count": 531,
+        "verified": true
+      },
+      "method": "density_matrix",
+      "construction_ms": 10.102300002472475,
+      "compilation_ms": 16.430199990281835,
+      "simulation_ms": 551.5789999917615,
+      "analysis_ms": 0.07189999450929463
+    },
+    {
+      "implementation": "rotation",
+      "shots": 32,
+      "seed": 41,
+      "noise_rate": 0.01,
+      "status": "completed",
+      "period_recovered": true,
+      "factors_recovered": true,
+      "toy_recovered": true,
+      "counts": {
+        "1101": 1,
+        "0100": 7,
+        "1110": 1,
+        "0000": 3,
+        "1000": 7,
+        "1111": 1,
+        "0001": 1,
+        "1100": 8,
+        "1011": 1,
+        "0111": 1,
+        "0011": 1
+      },
+      "analysis": {
+        "status": "success",
+        "estimated_period": 4,
+        "factors": [
+          3,
+          5
+        ],
+        "verified_period_shots": 15,
+        "total_shots": 32,
+        "outcomes": [
+          {
+            "bitstring": "0000",
+            "count": 3,
+            "measured_integer": 0,
+            "phase": "0",
+            "rational_approximation": "0",
+            "candidate_period": null,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Zero phase carries no period information"
+          },
+          {
+            "bitstring": "0001",
+            "count": 1,
+            "measured_integer": 1,
+            "phase": "1/16",
+            "rational_approximation": "1/14",
+            "candidate_period": 14,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "0011",
+            "count": 1,
+            "measured_integer": 3,
+            "phase": "3/16",
+            "rational_approximation": "2/11",
+            "candidate_period": 11,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "0100",
+            "count": 7,
+            "measured_integer": 4,
+            "phase": "1/4",
+            "rational_approximation": "1/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          },
+          {
+            "bitstring": "0111",
+            "count": 1,
+            "measured_integer": 7,
+            "phase": "7/16",
+            "rational_approximation": "4/9",
+            "candidate_period": 9,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1000",
+            "count": 7,
+            "measured_integer": 8,
+            "phase": "1/2",
+            "rational_approximation": "1/2",
+            "candidate_period": 2,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1011",
+            "count": 1,
+            "measured_integer": 11,
+            "phase": "11/16",
+            "rational_approximation": "9/13",
+            "candidate_period": 13,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1100",
+            "count": 8,
+            "measured_integer": 12,
+            "phase": "3/4",
+            "rational_approximation": "3/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          },
+          {
+            "bitstring": "1101",
+            "count": 1,
+            "measured_integer": 13,
+            "phase": "13/16",
+            "rational_approximation": "9/11",
+            "candidate_period": 11,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1110",
+            "count": 1,
+            "measured_integer": 14,
+            "phase": "7/8",
+            "rational_approximation": "7/8",
+            "candidate_period": 8,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1111",
+            "count": 1,
+            "measured_integer": 15,
+            "phase": "15/16",
+            "rational_approximation": "13/14",
+            "candidate_period": 14,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          }
+        ],
+        "message": "Nontrivial factors recovered from measured phases"
+      },
+      "usable_factor_shots": 15,
+      "width": 8,
+      "depth": 330,
+      "operations": {
+        "rz": 292,
+        "cx": 180,
+        "sx": 58,
+        "measure": 4,
+        "x": 1
+      },
+      "noise_coverage": {
+        "attached_instructions": [
+          "cx",
+          "rz",
+          "sx",
+          "x"
+        ],
+        "affected_operations": {
+          "rz": 292,
+          "cx": 180,
+          "sx": 58,
+          "x": 1
+        },
+        "affected_gate_count": 531,
+        "verified": true
+      },
+      "method": "density_matrix",
+      "construction_ms": 8.066100010182709,
+      "compilation_ms": 12.72239998797886,
+      "simulation_ms": 541.5117999946233,
+      "analysis_ms": 0.5643999902531505
+    },
+    {
+      "implementation": "rotation",
+      "shots": 32,
+      "seed": 42,
+      "noise_rate": 0.01,
+      "status": "completed",
+      "period_recovered": true,
+      "factors_recovered": true,
+      "toy_recovered": true,
+      "counts": {
+        "0001": 3,
+        "0100": 5,
+        "1101": 1,
+        "1110": 4,
+        "1000": 3,
+        "0000": 6,
+        "0111": 1,
+        "1100": 2,
+        "0010": 5,
+        "0011": 1,
+        "0110": 1
+      },
+      "analysis": {
+        "status": "success",
+        "estimated_period": 4,
+        "factors": [
+          3,
+          5
+        ],
+        "verified_period_shots": 7,
+        "total_shots": 32,
+        "outcomes": [
+          {
+            "bitstring": "0000",
+            "count": 6,
+            "measured_integer": 0,
+            "phase": "0",
+            "rational_approximation": "0",
+            "candidate_period": null,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Zero phase carries no period information"
+          },
+          {
+            "bitstring": "0001",
+            "count": 3,
+            "measured_integer": 1,
+            "phase": "1/16",
+            "rational_approximation": "1/14",
+            "candidate_period": 14,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "0010",
+            "count": 5,
+            "measured_integer": 2,
+            "phase": "1/8",
+            "rational_approximation": "1/8",
+            "candidate_period": 8,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "0011",
+            "count": 1,
+            "measured_integer": 3,
+            "phase": "3/16",
+            "rational_approximation": "2/11",
+            "candidate_period": 11,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "0100",
+            "count": 5,
+            "measured_integer": 4,
+            "phase": "1/4",
+            "rational_approximation": "1/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          },
+          {
+            "bitstring": "0110",
+            "count": 1,
+            "measured_integer": 6,
+            "phase": "3/8",
+            "rational_approximation": "3/8",
+            "candidate_period": 8,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "0111",
+            "count": 1,
+            "measured_integer": 7,
+            "phase": "7/16",
+            "rational_approximation": "4/9",
+            "candidate_period": 9,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1000",
+            "count": 3,
+            "measured_integer": 8,
+            "phase": "1/2",
+            "rational_approximation": "1/2",
+            "candidate_period": 2,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1100",
+            "count": 2,
+            "measured_integer": 12,
+            "phase": "3/4",
+            "rational_approximation": "3/4",
+            "candidate_period": 4,
+            "verified_period": 4,
+            "verified": true,
+            "factors": [
+              3,
+              5
+            ],
+            "reason": "Verified period yields nontrivial factors"
+          },
+          {
+            "bitstring": "1101",
+            "count": 1,
+            "measured_integer": 13,
+            "phase": "13/16",
+            "rational_approximation": "9/11",
+            "candidate_period": 11,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          },
+          {
+            "bitstring": "1110",
+            "count": 4,
+            "measured_integer": 14,
+            "phase": "7/8",
+            "rational_approximation": "7/8",
+            "candidate_period": 8,
+            "verified_period": null,
+            "verified": false,
+            "factors": [],
+            "reason": "Candidate fails modular or minimal-order verification; outcome is inconclusive"
+          }
+        ],
+        "message": "Nontrivial factors recovered from measured phases"
+      },
+      "usable_factor_shots": 7,
+      "width": 8,
+      "depth": 330,
+      "operations": {
+        "rz": 292,
+        "cx": 180,
+        "sx": 58,
+        "measure": 4,
+        "x": 1
+      },
+      "noise_coverage": {
+        "attached_instructions": [
+          "cx",
+          "rz",
+          "sx",
+          "x"
+        ],
+        "affected_operations": {
+          "rz": 292,
+          "cx": 180,
+          "sx": 58,
+          "x": 1
+        },
+        "affected_gate_count": 531,
+        "verified": true
+      },
+      "method": "density_matrix",
+      "construction_ms": 9.966999990865588,
+      "compilation_ms": 14.810599997872487,
+      "simulation_ms": 492.80819998239167,
+      "analysis_ms": 0.3529000096023083
+    }
+  ],
+  "summary": [
+    {
+      "implementation": "matrix",
+      "noise_rate": 0.0,
+      "shots": 1,
+      "planned_trials": 2,
+      "failed_trials": 0,
+      "inconclusive_trials": 2,
+      "period_recovered": {
+        "successes": 0,
+        "trials": 2,
+        "proportion": 0.0,
+        "wilson_95_low": 0.0,
+        "wilson_95_high": 0.6576197724933469
+      },
+      "factors_recovered": {
+        "successes": 0,
+        "trials": 2,
+        "proportion": 0.0,
+        "wilson_95_low": 0.0,
+        "wilson_95_high": 0.6576197724933469
+      },
+      "toy_recovered": {
+        "successes": 0,
+        "trials": 2,
+        "proportion": 0.0,
+        "wilson_95_low": 0.0,
+        "wilson_95_high": 0.6576197724933469
+      },
+      "median_construction_ms": 534.2603000026429,
+      "median_compilation_ms": 86.41694998368621,
+      "median_simulation_ms": 275.6801999930758,
+      "median_analysis_ms": 0.10654999641701579,
+      "executed_shots": 2,
+      "usable_factor_shot_fraction": 0.0,
+      "depth": 1936,
+      "cx_gates": 489
+    },
+    {
+      "implementation": "matrix",
+      "noise_rate": 0.0,
+      "shots": 32,
+      "planned_trials": 2,
+      "failed_trials": 0,
+      "inconclusive_trials": 0,
+      "period_recovered": {
+        "successes": 2,
+        "trials": 2,
+        "proportion": 1.0,
+        "wilson_95_low": 0.34238022750665303,
+        "wilson_95_high": 1.0
+      },
+      "factors_recovered": {
+        "successes": 2,
+        "trials": 2,
+        "proportion": 1.0,
+        "wilson_95_low": 0.34238022750665303,
+        "wilson_95_high": 1.0
+      },
+      "toy_recovered": {
+        "successes": 2,
+        "trials": 2,
+        "proportion": 1.0,
+        "wilson_95_low": 0.34238022750665303,
+        "wilson_95_high": 1.0
+      },
+      "median_construction_ms": 449.16195000405423,
+      "median_compilation_ms": 36.82634998403955,
+      "median_simulation_ms": 284.0193000010913,
+      "median_analysis_ms": 0.2600500010885298,
+      "executed_shots": 64,
+      "usable_factor_shot_fraction": 0.53125,
+      "depth": 1936,
+      "cx_gates": 489
+    },
+    {
+      "implementation": "matrix",
+      "noise_rate": 0.01,
+      "shots": 1,
+      "planned_trials": 2,
+      "failed_trials": 0,
+      "inconclusive_trials": 1,
+      "period_recovered": {
+        "successes": 1,
+        "trials": 2,
+        "proportion": 0.5,
+        "wilson_95_low": 0.09453120573423074,
+        "wilson_95_high": 0.9054687942657693
+      },
+      "factors_recovered": {
+        "successes": 1,
+        "trials": 2,
+        "proportion": 0.5,
+        "wilson_95_low": 0.09453120573423074,
+        "wilson_95_high": 0.9054687942657693
+      },
+      "toy_recovered": {
+        "successes": 1,
+        "trials": 2,
+        "proportion": 0.5,
+        "wilson_95_low": 0.09453120573423074,
+        "wilson_95_high": 0.9054687942657693
+      },
+      "median_construction_ms": 444.2339999950491,
+      "median_compilation_ms": 31.424849992617965,
+      "median_simulation_ms": 1048.2375000137836,
+      "median_analysis_ms": 0.10010000551119447,
+      "executed_shots": 2,
+      "usable_factor_shot_fraction": 0.5,
+      "depth": 1936,
+      "cx_gates": 489
+    },
+    {
+      "implementation": "matrix",
+      "noise_rate": 0.01,
+      "shots": 32,
+      "planned_trials": 2,
+      "failed_trials": 0,
+      "inconclusive_trials": 0,
+      "period_recovered": {
+        "successes": 2,
+        "trials": 2,
+        "proportion": 1.0,
+        "wilson_95_low": 0.34238022750665303,
+        "wilson_95_high": 1.0
+      },
+      "factors_recovered": {
+        "successes": 2,
+        "trials": 2,
+        "proportion": 1.0,
+        "wilson_95_low": 0.34238022750665303,
+        "wilson_95_high": 1.0
+      },
+      "toy_recovered": {
+        "successes": 2,
+        "trials": 2,
+        "proportion": 1.0,
+        "wilson_95_low": 0.34238022750665303,
+        "wilson_95_high": 1.0
+      },
+      "median_construction_ms": 454.5446500123944,
+      "median_compilation_ms": 28.409549995558336,
+      "median_simulation_ms": 984.632200008491,
+      "median_analysis_ms": 0.424749989178963,
+      "executed_shots": 64,
+      "usable_factor_shot_fraction": 0.328125,
+      "depth": 1936,
+      "cx_gates": 489
+    },
+    {
+      "implementation": "rotation",
+      "noise_rate": 0.0,
+      "shots": 1,
+      "planned_trials": 2,
+      "failed_trials": 0,
+      "inconclusive_trials": 2,
+      "period_recovered": {
+        "successes": 0,
+        "trials": 2,
+        "proportion": 0.0,
+        "wilson_95_low": 0.0,
+        "wilson_95_high": 0.6576197724933469
+      },
+      "factors_recovered": {
+        "successes": 0,
+        "trials": 2,
+        "proportion": 0.0,
+        "wilson_95_low": 0.0,
+        "wilson_95_high": 0.6576197724933469
+      },
+      "toy_recovered": {
+        "successes": 0,
+        "trials": 2,
+        "proportion": 0.0,
+        "wilson_95_low": 0.0,
+        "wilson_95_high": 0.6576197724933469
+      },
+      "median_construction_ms": 11.837450001621619,
+      "median_compilation_ms": 18.89649999793619,
+      "median_simulation_ms": 43.020750003051944,
+      "median_analysis_ms": 0.06579999171663076,
+      "executed_shots": 2,
+      "usable_factor_shot_fraction": 0.0,
+      "depth": 330,
+      "cx_gates": 180
+    },
+    {
+      "implementation": "rotation",
+      "noise_rate": 0.0,
+      "shots": 32,
+      "planned_trials": 2,
+      "failed_trials": 0,
+      "inconclusive_trials": 0,
+      "period_recovered": {
+        "successes": 2,
+        "trials": 2,
+        "proportion": 1.0,
+        "wilson_95_low": 0.34238022750665303,
+        "wilson_95_high": 1.0
+      },
+      "factors_recovered": {
+        "successes": 2,
+        "trials": 2,
+        "proportion": 1.0,
+        "wilson_95_low": 0.34238022750665303,
+        "wilson_95_high": 1.0
+      },
+      "toy_recovered": {
+        "successes": 2,
+        "trials": 2,
+        "proportion": 1.0,
+        "wilson_95_low": 0.34238022750665303,
+        "wilson_95_high": 1.0
+      },
+      "median_construction_ms": 9.955299989087507,
+      "median_compilation_ms": 17.560249994858168,
+      "median_simulation_ms": 46.74539998813998,
+      "median_analysis_ms": 0.21135000861249864,
+      "executed_shots": 64,
+      "usable_factor_shot_fraction": 0.46875,
+      "depth": 330,
+      "cx_gates": 180
+    },
+    {
+      "implementation": "rotation",
+      "noise_rate": 0.01,
+      "shots": 1,
+      "planned_trials": 2,
+      "failed_trials": 0,
+      "inconclusive_trials": 1,
+      "period_recovered": {
+        "successes": 1,
+        "trials": 2,
+        "proportion": 0.5,
+        "wilson_95_low": 0.09453120573423074,
+        "wilson_95_high": 0.9054687942657693
+      },
+      "factors_recovered": {
+        "successes": 1,
+        "trials": 2,
+        "proportion": 0.5,
+        "wilson_95_low": 0.09453120573423074,
+        "wilson_95_high": 0.9054687942657693
+      },
+      "toy_recovered": {
+        "successes": 1,
+        "trials": 2,
+        "proportion": 0.5,
+        "wilson_95_low": 0.09453120573423074,
+        "wilson_95_high": 0.9054687942657693
+      },
+      "median_construction_ms": 11.559249993297271,
+      "median_compilation_ms": 17.333049996523187,
+      "median_simulation_ms": 571.1677499930374,
+      "median_analysis_ms": 0.08225000055972487,
+      "executed_shots": 2,
+      "usable_factor_shot_fraction": 0.5,
+      "depth": 330,
+      "cx_gates": 180
+    },
+    {
+      "implementation": "rotation",
+      "noise_rate": 0.01,
+      "shots": 32,
+      "planned_trials": 2,
+      "failed_trials": 0,
+      "inconclusive_trials": 0,
+      "period_recovered": {
+        "successes": 2,
+        "trials": 2,
+        "proportion": 1.0,
+        "wilson_95_low": 0.34238022750665303,
+        "wilson_95_high": 1.0
+      },
+      "factors_recovered": {
+        "successes": 2,
+        "trials": 2,
+        "proportion": 1.0,
+        "wilson_95_low": 0.34238022750665303,
+        "wilson_95_high": 1.0
+      },
+      "toy_recovered": {
+        "successes": 2,
+        "trials": 2,
+        "proportion": 1.0,
+        "wilson_95_low": 0.34238022750665303,
+        "wilson_95_high": 1.0
+      },
+      "median_construction_ms": 9.016550000524148,
+      "median_compilation_ms": 13.766499992925674,
+      "median_simulation_ms": 517.1599999885075,
+      "median_analysis_ms": 0.45864999992772937,
+      "executed_shots": 64,
+      "usable_factor_shot_fraction": 0.34375,
+      "depth": 330,
+      "cx_gates": 180
+    }
+  ],
+  "classical_baseline": {
+    "algorithm": "trial division",
+    "modulus": 15,
+    "factors": [
+      3,
+      5
+    ],
+    "repetitions": 100,
+    "median_ms": 0.0021999876480549574,
+    "scope": "classical factoring only; quantum rows time circuit construction, compilation, simulation and analysis separately"
+  },
+  "interpretation": "Pilot measurements, not quantum advantage or production threat estimates. Few trials cannot establish a reliable budget; gate counts can inform the next experiment, not cryptographic parameters.",
+  "evidence_id": "5e96999ee7ee6f4c997f7117fe9fd99bc8104f959e70e4a9b9a9769542a250da"
+}

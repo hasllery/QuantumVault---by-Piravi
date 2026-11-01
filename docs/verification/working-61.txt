@@ -1,0 +1,153 @@
+test_actual_twenty_mib_boundary_and_over_limit (test_app.ApplicationTests.test_actual_twenty_mib_boundary_and_over_limit) ... 2026-11-01 14:51:06.871 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-01 14:51:11.904 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_all_pages_and_saved_measurements (test_app.ApplicationTests.test_all_pages_and_saved_measurements) ... 2026-11-01 14:51:14.393 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\streamlit\elements\lib\built_in_chart_utils.py:620: Pandas4Warning: The inplace keyword in DataFrame.reset_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.reset_index(inplace=True)  # noqa: PD002
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\streamlit\elements\lib\built_in_chart_utils.py:620: Pandas4Warning: The inplace keyword in DataFrame.reset_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.reset_index(inplace=True)  # noqa: PD002
+ok
+test_changed_inputs_invalidate_previous_downloads (test_app.ApplicationTests.test_changed_inputs_invalidate_previous_downloads) ... 2026-11-01 14:51:16.631 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_controlled_study_and_file_benchmark_widgets (test_app.ApplicationTests.test_controlled_study_and_file_benchmark_widgets) ... 2026-11-01 14:51:17.882 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\streamlit\elements\lib\built_in_chart_utils.py:620: Pandas4Warning: The inplace keyword in DataFrame.reset_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.reset_index(inplace=True)  # noqa: PD002
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\streamlit\elements\lib\built_in_chart_utils.py:620: Pandas4Warning: The inplace keyword in DataFrame.reset_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.reset_index(inplace=True)  # noqa: PD002
+ok
+test_download_upload_round_trips_both_algorithms (test_app.ApplicationTests.test_download_upload_round_trips_both_algorithms) ... 2026-11-01 14:51:31.414 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-01 14:51:33.359 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-01 14:51:35.354 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-01 14:51:36.920 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-01 14:51:38.524 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-01 14:51:40.323 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-01 14:51:42.045 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-01 14:51:43.910 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_fingerprint_mismatch_changed_key_and_explicit_unverified_override (test_app.ApplicationTests.test_fingerprint_mismatch_changed_key_and_explicit_unverified_override) ... 2026-11-01 14:51:45.756 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_generated_key_source_and_session_cleanup (test_app.ApplicationTests.test_generated_key_source_and_session_cleanup) ... 2026-11-01 14:51:47.229 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_inconclusive_or_changed_controls_cannot_apply_assessment (test_app.ApplicationTests.test_inconclusive_or_changed_controls_cannot_apply_assessment) ... 2026-11-01 14:51:48.767 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\qiskit\visualization\circuit\text.py:784: RuntimeWarning: The encoding cp1252 has a limited charset. Consider a different encoding in your environment. UTF-8 is being used instead
+  warn(
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\streamlit\elements\lib\built_in_chart_utils.py:620: Pandas4Warning: The inplace keyword in DataFrame.reset_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.reset_index(inplace=True)  # noqa: PD002
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\streamlit\elements\lib\built_in_chart_utils.py:620: Pandas4Warning: The inplace keyword in DataFrame.reset_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.reset_index(inplace=True)  # noqa: PD002
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\qiskit\visualization\circuit\text.py:784: RuntimeWarning: The encoding cp1252 has a limited charset. Consider a different encoding in your environment. UTF-8 is being used instead
+  warn(
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\streamlit\elements\lib\built_in_chart_utils.py:620: Pandas4Warning: The inplace keyword in DataFrame.reset_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.reset_index(inplace=True)  # noqa: PD002
+ok
+test_legacy_import_requires_explicit_format_selection (test_app.ApplicationTests.test_legacy_import_requires_explicit_format_selection) ... 2026-11-01 14:51:51.975 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_manual_override_and_clear_preserve_honest_assessment_status (test_app.ApplicationTests.test_manual_override_and_clear_preserve_honest_assessment_status) ... 2026-11-01 14:51:53.843 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\qiskit\visualization\circuit\text.py:784: RuntimeWarning: The encoding cp1252 has a limited charset. Consider a different encoding in your environment. UTF-8 is being used instead
+  warn(
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\streamlit\elements\lib\built_in_chart_utils.py:620: Pandas4Warning: The inplace keyword in DataFrame.reset_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.reset_index(inplace=True)  # noqa: PD002
+ok
+test_missing_or_invalid_benchmark_shows_error (test_app.ApplicationTests.test_missing_or_invalid_benchmark_shows_error) ... 2026-11-01 14:51:56.618 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\streamlit\elements\lib\built_in_chart_utils.py:620: Pandas4Warning: The inplace keyword in DataFrame.reset_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.reset_index(inplace=True)  # noqa: PD002
+ok
+test_protected_backup_wrong_password_and_fresh_session_recovery (test_app.ApplicationTests.test_protected_backup_wrong_password_and_fresh_session_recovery) ... 2026-11-01 14:51:57.270 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-01 14:51:58.966 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-01 14:52:00.472 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-01 14:52:02.010 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_quantum_evidence_applies_to_vault_and_links_file_operations (test_app.ApplicationTests.test_quantum_evidence_applies_to_vault_and_links_file_operations) ... 2026-11-01 14:52:03.577 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\qiskit\visualization\circuit\text.py:784: RuntimeWarning: The encoding cp1252 has a limited charset. Consider a different encoding in your environment. UTF-8 is being used instead
+  warn(
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\streamlit\elements\lib\built_in_chart_utils.py:620: Pandas4Warning: The inplace keyword in DataFrame.reset_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.reset_index(inplace=True)  # noqa: PD002
+ok
+test_quantum_runs_success_and_inconclusive_through_widgets (test_app.ApplicationTests.test_quantum_runs_success_and_inconclusive_through_widgets) ... 2026-11-01 14:52:06.819 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\qiskit\visualization\circuit\text.py:784: RuntimeWarning: The encoding cp1252 has a limited charset. Consider a different encoding in your environment. UTF-8 is being used instead
+  warn(
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\streamlit\elements\lib\built_in_chart_utils.py:620: Pandas4Warning: The inplace keyword in DataFrame.reset_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.reset_index(inplace=True)  # noqa: PD002
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\streamlit\elements\lib\built_in_chart_utils.py:620: Pandas4Warning: The inplace keyword in DataFrame.reset_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.reset_index(inplace=True)  # noqa: PD002
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\qiskit\visualization\circuit\text.py:784: RuntimeWarning: The encoding cp1252 has a limited charset. Consider a different encoding in your environment. UTF-8 is being used instead
+  warn(
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\streamlit\elements\lib\built_in_chart_utils.py:620: Pandas4Warning: The inplace keyword in DataFrame.reset_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.reset_index(inplace=True)  # noqa: PD002
+ok
+test_simulator_failure_does_not_show_previous_results (test_app.ApplicationTests.test_simulator_failure_does_not_show_previous_results) ... 2026-11-01 14:52:09.498 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\qiskit\visualization\circuit\text.py:784: RuntimeWarning: The encoding cp1252 has a limited charset. Consider a different encoding in your environment. UTF-8 is being used instead
+  warn(
+C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\streamlit\elements\lib\built_in_chart_utils.py:620: Pandas4Warning: The inplace keyword in DataFrame.reset_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.reset_index(inplace=True)  # noqa: PD002
+ok
+test_size_limit_and_missing_inputs (test_app.ApplicationTests.test_size_limit_and_missing_inputs) ... 2026-11-01 14:52:11.169 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_wrong_keys_tampered_and_malformed_packages_rejected (test_app.ApplicationTests.test_wrong_keys_tampered_and_malformed_packages_rejected) ... 2026-11-01 14:52:12.486 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-01 14:52:18.972 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_algorithm_formats_are_distinct (test_classical.ClassicalTests.test_algorithm_formats_are_distinct) ... ok
+test_fresh_ephemeral_key (test_classical.ClassicalTests.test_fresh_ephemeral_key) ... ok
+test_invalid_keys (test_classical.ClassicalTests.test_invalid_keys) ... ok
+test_key_agreement (test_classical.ClassicalTests.test_key_agreement) ... ok
+test_malformed (test_classical.ClassicalTests.test_malformed) ... ok
+test_round_trips (test_classical.ClassicalTests.test_round_trips) ... ok
+test_tampering (test_classical.ClassicalTests.test_tampering) ... ok
+test_wrong_key (test_classical.ClassicalTests.test_wrong_key) ... ok
+test_kem (test_encryption.EncryptionTests.test_kem) ... ok
+test_malformed (test_encryption.EncryptionTests.test_malformed) ... ok
+test_randomized_encryption (test_encryption.EncryptionTests.test_randomized_encryption) ... ok
+test_round_trips (test_encryption.EncryptionTests.test_round_trips) ... ok
+test_tampering (test_encryption.EncryptionTests.test_tampering) ... ok
+test_wrong_key (test_encryption.EncryptionTests.test_wrong_key) ... ok
+test_complete_circuit_equivalence (test_experiments.ExperimentTests.test_complete_circuit_equivalence) ... ok
+test_full_multiplier_and_control_equivalence (test_experiments.ExperimentTests.test_full_multiplier_and_control_equivalence) ... ok
+test_noise_must_cover_executed_basis (test_experiments.ExperimentTests.test_noise_must_cover_executed_basis) ... ok
+test_nonminimal_noisy_candidate_is_not_a_recovery_fallback (test_experiments.ExperimentTests.test_nonminimal_noisy_candidate_is_not_a_recovery_fallback) ... ok
+test_real_ideal_and_noisy_execution (test_experiments.ExperimentTests.test_real_ideal_and_noisy_execution) ... ok
+test_runner_keeps_failed_trials_and_bounds (test_experiments.ExperimentTests.test_runner_keeps_failed_trials_and_bounds) ... ok
+test_wilson_and_failure_denominators (test_experiments.ExperimentTests.test_wilson_and_failure_denominators) ... ok
+test_invalid_workloads (test_file_benchmark.FileBenchmarkTests.test_invalid_workloads) ... ok
+test_measured_package_overhead_and_timings (test_file_benchmark.FileBenchmarkTests.test_measured_package_overhead_and_timings) ... ok
+test_algorithm_and_header_authentication (test_key_management.KeyManagementTests.test_algorithm_and_header_authentication) ... ok
+test_fingerprint_matching_and_changed_key (test_key_management.KeyManagementTests.test_fingerprint_matching_and_changed_key) ... ok
+test_password_and_raw_key_bounds (test_key_management.KeyManagementTests.test_password_and_raw_key_bounds) ... ok
+test_profile_and_resource_limits_before_kdf (test_key_management.KeyManagementTests.test_profile_and_resource_limits_before_kdf) ... ok
+test_round_trips_and_randomized_backups (test_key_management.KeyManagementTests.test_round_trips_and_randomized_backups) ... ok
+test_safe_download_names (test_key_management.KeyManagementTests.test_safe_download_names) ... ok
+test_wrong_password_and_ciphertext_tampering (test_key_management.KeyManagementTests.test_wrong_password_and_ciphertext_tampering) ... ok
+test_aer_recovers_order_and_factors (test_quantum.QuantumTests.test_aer_recovers_order_and_factors) ... C:\Users\HP\works\QuantumVault\.venv\Lib\site-packages\qiskit\visualization\circuit\text.py:784: RuntimeWarning: The encoding cp1252 has a limited charset. Consider a different encoding in your environment. UTF-8 is being used instead
+  warn(
+ok
+test_aer_valid_order_can_fail_to_factor (test_quantum.QuantumTests.test_aer_valid_order_can_fail_to_factor) ... ok
+test_all_modular_multipliers_and_control_states (test_quantum.QuantumTests.test_all_modular_multipliers_and_control_states) ... ok
+test_another_base_has_different_order (test_quantum.QuantumTests.test_another_base_has_different_order) ... ok
+test_factor_validation (test_quantum.QuantumTests.test_factor_validation) ... ok
+test_inconclusive_counts_have_no_fallback (test_quantum.QuantumTests.test_inconclusive_counts_have_no_fallback) ... ok
+test_invalid_input (test_quantum.QuantumTests.test_invalid_input) ... ok
+test_inverse_qft_against_fourier_matrix (test_quantum.QuantumTests.test_inverse_qft_against_fourier_matrix) ... ok
+test_evidence_identity_and_no_real_secret_fields (test_threat_assessment.ThreatAssessmentTests.test_evidence_identity_and_no_real_secret_fields) ... ok
+test_forged_analysis_is_ignored (test_threat_assessment.ThreatAssessmentTests.test_forged_analysis_is_ignored) ... ok
+test_invalid_counts_fail_closed (test_threat_assessment.ThreatAssessmentTests.test_invalid_counts_fail_closed) ... ok
+test_measured_factors_drive_toy_recovery (test_threat_assessment.ThreatAssessmentTests.test_measured_factors_drive_toy_recovery) ... ok
+test_no_factors_means_no_toy_recovery (test_threat_assessment.ThreatAssessmentTests.test_no_factors_means_no_toy_recovery) ... ok
+test_valid_period_can_be_inconclusive (test_threat_assessment.ThreatAssessmentTests.test_valid_period_can_be_inconclusive) ... ok
+
+----------------------------------------------------------------------
+Ran 61 tests in 97.345s
+
+OK

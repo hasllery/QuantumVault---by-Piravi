@@ -1,0 +1,10 @@
+streamlit>=1.66.1
+jwcrypto==1.6.1
+cryptography
+pqcrypto==0.3.4
+qiskit
+qiskit-aer
+pandas
+plotly
+numpy
+matplotlib

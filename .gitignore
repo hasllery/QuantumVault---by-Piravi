@@ -1,0 +1,6 @@
+.venv/
+.venv-verification/
+__pycache__/
+*.pyc
+storage/keys/*
+.test-artifacts/

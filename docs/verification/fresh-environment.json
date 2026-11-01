@@ -1,0 +1,60 @@
+{
+  "python_executable": "C:\\Users\\HP\\works\\QuantumVault\\.venv-verification\\Scripts\\python.exe",
+  "checks": [
+    {
+      "name": "Python 3.11",
+      "ok": true,
+      "version": "3.11.9"
+    },
+    {
+      "name": "streamlit",
+      "ok": true,
+      "version": "1.66.1"
+    },
+    {
+      "name": "cryptography",
+      "ok": true,
+      "version": "50.0.2"
+    },
+    {
+      "name": "pqcrypto",
+      "ok": true,
+      "version": "0.3.4"
+    },
+    {
+      "name": "qiskit",
+      "ok": true,
+      "version": "2.6.1"
+    },
+    {
+      "name": "qiskit-aer",
+      "ok": true,
+      "version": "0.18.2"
+    },
+    {
+      "name": "jwcrypto",
+      "ok": true,
+      "version": "1.6.1"
+    },
+    {
+      "name": "numpy",
+      "ok": true,
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "ok": true,
+      "version": "3.1.0"
+    },
+    {
+      "name": "plotly",
+      "ok": true,
+      "version": "7.1.0"
+    },
+    {
+      "name": "ML-KEM-768 agreement",
+      "ok": true
+    }
+  ],
+  "ok": true
+}

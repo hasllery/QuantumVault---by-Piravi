@@ -1,0 +1,13 @@
+test_controlled_study_and_file_benchmark_widgets (test_app.ApplicationTests.test_controlled_study_and_file_benchmark_widgets) ... 2026-11-01 15:21:58.361 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+C:\Users\HP\works\QuantumVault\.venv-verification\Lib\site-packages\streamlit\elements\lib\built_in_chart_utils.py:620: Pandas4Warning: The inplace keyword in DataFrame.reset_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.reset_index(inplace=True)  # noqa: PD002
+C:\Users\HP\works\QuantumVault\.venv-verification\Lib\site-packages\streamlit\elements\lib\built_in_chart_utils.py:620: Pandas4Warning: The inplace keyword in DataFrame.reset_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.reset_index(inplace=True)  # noqa: PD002
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 15.308s
+
+OK

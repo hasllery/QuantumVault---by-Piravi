@@ -1,0 +1,33 @@
+{
+  "verified_at_utc": "2026-11-01T09:46:30.537007+00:00",
+  "fresh_environment": "C:\\Users\\HP\\works\\QuantumVault\\.venv-verification\\Scripts\\python.exe",
+  "lock_matches_installed_freeze": true,
+  "pip_check": "No broken requirements found.",
+  "core_files": [
+    {
+      "path": "crypto_engine\\pqc.py",
+      "sha256": "2BAE21B690B9F563B35F111BA3F93345E7C3DE133001B70C75C98EAD90843071",
+      "matches_prechange": true
+    },
+    {
+      "path": "crypto_engine\\classical.py",
+      "sha256": "B05352F52B21123B8AE18AA5B67903049DA016DBE93DADA9B34A867558F464D5",
+      "matches_prechange": true
+    },
+    {
+      "path": "crypto_engine\\encryption.py",
+      "sha256": "7378AAEDD73ACAB79825C8FF913DE7CB814F700C7EF03E3E9420683E2F77DA9B",
+      "matches_prechange": true
+    }
+  ],
+  "baseline_tests": 40,
+  "working_expanded_tests": 61,
+  "fresh_expanded_tests": 61,
+  "final_fresh_tests": 62,
+  "final_suite_seconds": 69.05,
+  "independent_teammate_acceptance": "pending",
+  "independent_security_review": "not completed",
+  "extended_study": "quantum_lab/records/study-20261101T092636Z-735f0c81.json",
+  "extended_trials": 60,
+  "extended_execution_failures": 0
+}
